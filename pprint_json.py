@@ -3,7 +3,9 @@ import sys
 
 
 def load_data(filepath):
-    return json.loads(open(filepath, 'r').read())
+     with open(filepath,'r') as opened_file:
+        unstructured_data = json.loads(opened_file.read())
+     return unstructured_data
 
 
 def pretty_print_json(unstructured_data):
