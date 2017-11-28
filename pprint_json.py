@@ -13,4 +13,3 @@ def pretty_print_json(unstructured_data):
 if __name__ == '__main__':
     filepath = sys.argv[1]
     pretty_print_json(load_data(sys.argv[1]))
-pass
